@@ -1,0 +1,37 @@
+<h1>Add notebooks</h1>
+<form action='/add' method='POST' class='z-depth-3 f_control'>
+  <div class='input-field'>
+    <input
+      id='title'
+      name='title'
+      type='text'
+      class='validate'
+      required
+      min='1'
+    />
+    <label class='active' for='title'>Notebooks model</label>
+    <span class='helper-text' data-error='Enter Notebooks Name'></span>
+  </div>
+  <div class='input-field'>
+    <input id='price' name='price' type='number' class='validate' required />
+    <label class='active' for='price'>Price</label>
+    <span class='helper-text' data-error='Enter Price'></span>
+  </div>
+  <div class='input-field'>
+    <input id='img' name='img' type='text' class='validate' required />
+    <label class='active' for='img'>Image URL</label>
+    <span class='helper-text' data-error='Enter Image URl'></span>
+  </div>
+  <div class='input-field'>
+    <textarea
+      id='descr'
+      name='descr'
+      type='text'
+      class='materialize-textarea'
+      required
+    ></textarea>
+    <label class='active' for='descr'>Descriptions</label>
+    <span class='helper-text' data-error='Enter Notebooks details'></span>
+  </div>
+  <button class='btn btn-primary'>Add notebooks</button>
+</form>

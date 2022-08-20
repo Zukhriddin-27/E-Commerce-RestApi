@@ -1,0 +1,142 @@
+.nav-wrapper {
+  padding: 0 2rem;
+}
+.z-depth-3 {
+  padding: 2rem;
+}
+.content_notebook {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.card-content {
+  flex-grow: 1;
+}
+.content_notebook .card-image {
+  width: auto;
+  height: 240px;
+  object-fit: cover;
+}
+.card-content-price {
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-content-price .price {
+  margin: 0 10px;
+  text-align: end;
+}
+
+/* notebooks details */
+.horizontal {
+  display: flex;
+  flex-direction: row;
+}
+.horizontal .card-img img {
+  width: 400px;
+  height: 400px;
+
+  padding: 4rem;
+}
+.card-descr {
+  margin-top: 10px;
+  padding: 2rem;
+  font-weight: 300;
+}
+
+.content_notebook .card-image img {
+  padding: 1rem;
+}
+
+.card-action {
+  display: flex;
+  justify-content: space-between;
+}
+.notebook-price {
+  margin-right: 20px;
+  text-align: end;
+  font-size: 20px;
+  font-weight: 600;
+}
+.card-action.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-action form {
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1144px) {
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-descr {
+    margin-top: -4rem;
+    padding: 2rem;
+    font-weight: 400;
+  }
+  .content_notebook .card-image {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media only screen and (max-width: 786px) {
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-descr {
+    padding: 2rem;
+    font-weight: 400;
+  }
+  .content_notebook .card-image {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+}
+hr {
+  margin-top: 8rem;
+}
+.card-price {
+  text-align: end;
+  margin-right: 4rem;
+}
+@import url(http://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+  background-color: #eee;
+  font-family: 'Calibri', sans-serif !important;
+}
+
+.mt-100 {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.card {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+  box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+}
+
+.card-body {
+  padding: 10px;
+  background-color: transparent;
+}
+
+.btn-primary,
+.btn-primary.disabled,
+.btn-primary:disabled {
+  background-color: #4466f2 !important;
+  border-color: #4466f2 !important;
+}
